@@ -8,5 +8,5 @@
 let a = 2;
 let day = prompt(`Введите кол-во дней`)
 let speed = prompt(`Введите скорость увеличения муравьёв`)
-alert(`за ${day} дней`)
+alert(`за ${day} дней `)
 
