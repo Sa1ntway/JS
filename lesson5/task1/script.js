@@ -50,68 +50,68 @@
 
 
 
-// let one = prompt('Введите 1 любое число от 0 до 999');
-// let two = prompt('Введите 2 любое число от 0 до 999');
-// let three = prompt('Введите 3 любое число от 0 до 999');
-// let four = prompt('Введите 4 любое число от 0 до 999');
-// let five = prompt('Введите 5 любое число от 0 до 999');
+let one = prompt('Введите 1 любое число от 0 до 999');
+let two = prompt('Введите 2 любое число от 0 до 999');
+let three = prompt('Введите 3 любое число от 0 до 999');
+let four = prompt('Введите 4 любое число от 0 до 999');
+let five = prompt('Введите 5 любое число от 0 до 999');
 
-// let oneDigitCounter = 0;
-// let twoDigitCounter = 0;
-// let threeDigitCounter = 0;
+let oneDigitCounter = 0;
+let twoDigitCounter = 0;
+let threeDigitCounter = 0;
 
-// if (one.length === 1) {
-//     oneDigitCounter = oneDigitCounter + 1;
-// }
-// if (two.length === 1) {
-//     oneDigitCounter = oneDigitCounter + 1;
-// }
-// if (three.length === 1) {
-//     oneDigitCounter = oneDigitCounter + 1;
-// }
-// if (four.length === 1) {
-//     oneDigitCounter = oneDigitCounter + 1;
-// }
-// if (five.length === 1) {
-//     oneDigitCounter = oneDigitCounter + 1;
-// }
-
-
-// if (one.length === 2) {
-//     twoDigitCounter = twoDigitCounter + 1;
-// }
-// if (two.length === 2) {
-//     twoDigitCounter = twoDigitCounter + 1;
-// }
-// if (three.length === 2) {
-//     twoDigitCounter = twoDigitCounter + 1;
-// }
-// if (four.length === 2) {
-//     twoDigitCounter = twoDigitCounter + 1;
-// }
-// if (five.length === 2) {
-//     twoDigitCounter = twoDigitCounter + 1;
-// }
+if (one.length === 1) {
+    oneDigitCounter = oneDigitCounter + 1;
+}
+if (two.length === 1) {
+    oneDigitCounter = oneDigitCounter + 1;
+}
+if (three.length === 1) {
+    oneDigitCounter = oneDigitCounter + 1;
+}
+if (four.length === 1) {
+    oneDigitCounter = oneDigitCounter + 1;
+}
+if (five.length === 1) {
+    oneDigitCounter = oneDigitCounter + 1;
+}
 
 
-// if (one.length === 3) {
-//     threeDigitCounter = threeDigitCounter + 1;
-// }
-// if (two.length === 3) {
-//     threeDigitCounter = threeDigitCounter + 1;
-// }
-// if (three.length === 3) {
-//     threeDigitCounter = threeDigitCounter + 1;
-// }
-// if (four.length === 3) {
-//     threeDigitCounter = threeDigitCounter + 1;
-// }
-// if (five.length === 3) {
-//     threeDigitCounter = threeDigitCounter + 1;
-// }
+if (one.length === 2) {
+    twoDigitCounter = twoDigitCounter + 1;
+}
+if (two.length === 2) {
+    twoDigitCounter = twoDigitCounter + 1;
+}
+if (three.length === 2) {
+    twoDigitCounter = twoDigitCounter + 1;
+}
+if (four.length === 2) {
+    twoDigitCounter = twoDigitCounter + 1;
+}
+if (five.length === 2) {
+    twoDigitCounter = twoDigitCounter + 1;
+}
 
 
-// alert(`однозначные: ${oneDigitCounter}, двузначные: ${twoDigitCounter}, трёхзначные: ${threeDigitCounter}`)
+if (one.length === 3) {
+    threeDigitCounter = threeDigitCounter + 1;
+}
+if (two.length === 3) {
+    threeDigitCounter = threeDigitCounter + 1;
+}
+if (three.length === 3) {
+    threeDigitCounter = threeDigitCounter + 1;
+}
+if (four.length === 3) {
+    threeDigitCounter = threeDigitCounter + 1;
+}
+if (five.length === 3) {
+    threeDigitCounter = threeDigitCounter + 1;
+}
+
+
+alert(`однозначные: ${oneDigitCounter}, двузначные: ${twoDigitCounter}, трёхзначные: ${threeDigitCounter}`)
 
 
 
@@ -136,22 +136,22 @@
 
 
 
-let random = Math.floor(Math.random() * 5) || 1;
-if (random === 1) {
-    console.log(random, 'Winter');
-}
+// let random = Math.floor(Math.random() * 5) || 1;
+// if (random === 1) {
+//     console.log(random, 'Winter');
+// }
 
-else if (random === 2) {
-    console.log(random, 'Spring')
-}
+// else if (random === 2) {
+//     console.log(random, 'Spring')
+// }
 
-else if (random === 3) {
-    console.log(random, 'Summer')
-}
+// else if (random === 3) {
+//     console.log(random, 'Summer')
+// }
 
-else {
-    console.log(random, 'Autumn')
-}
+// else {
+//     console.log(random, 'Autumn')
+// }
 
 
 
