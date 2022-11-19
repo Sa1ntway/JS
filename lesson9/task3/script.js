@@ -47,25 +47,76 @@
 // }
 
 
-let answer = prompt('Как прошёл твой день?');
-let trimmedAnswer = answer.trim();
-let isGood = trimmedAnswer.indexOf('хорошо');
-let isBad = trimmedAnswer.indexOf('плохо');
-let splitedWords = trimmedAnswer.split(' ');
-let countWords = splitedWords.length;
+// let answer = prompt('Как прошёл твой день?');
+// let trimmedAnswer = answer.trim();
+// let isGood = trimmedAnswer.indexOf('хорошо');
+// let isBad = trimmedAnswer.indexOf('плохо');
+// let splitedWords = trimmedAnswer.split(' ');
+// let countWords = splitedWords.length;
 
-if (countWords > 1) {
-    if (isGood >= 0) {
-        alert('сегодня твой день')
-    }
-    else if (isBad >= 0) {
-        alert('Улбынись и всё получится');
-    }
-    else {
-        alert('Хорошего дня')
-    }
+// if (countWords > 1) {
+//     if (isGood >= 0) {
+//         alert('сегодня твой день')
+//     }
+//     else if (isBad >= 0) {
+//         alert('Улбынись и всё получится');
+//     }
+//     else {
+//         alert('Хорошего дня')
+//     }
 
-}
-else {
-    alert('Ответ должен состоять из нескольких слов!')
-}
+// }
+// else {
+//     alert('Ответ должен состоять из нескольких слов!')
+// }
+
+// -----------------------------------------------------------------------------------------------
+
+// let a = prompt('Введите какое-ниубдь слово');
+// let b = a.length % 2 == 0;
+// console.log(b)
+// if (b === true) {
+//     alert(`***${a}***`);
+// }
+// else if (b === false) {
+//     alert(`*${a}*`)
+// }
+
+
+
+
+// let a = prompt('Введите какое-ниубдь слово');
+// let b = a.length % 2 == 0;
+// if (b === true) {
+//     a = a.split('');
+//     let n = a[0];
+//     a[0] = a[a.length - 1];
+//     a[a.length - 1] = n
+//     console.log(a.join(''))
+
+// }
+// else if (b === false) {
+//     a = a.split('');
+//     let n = a[1];
+//     a[1] = a[a.length - 2];
+//     a[a.length - 2] = n
+//     console.log(a.join(''))
+// }
+
+
+
+
+
+
+// let a = prompt('введите ваш E-mail');
+// if (a === 'js@itgen.io') {
+//     alert('Это почта Айтигенио');
+
+// }
+// else if (a.includes('@', '.') ) {
+//     alert('Это почта, но не Айтигенио');
+// }
+
+// else {
+//     alert('Ошибка')
+// }
