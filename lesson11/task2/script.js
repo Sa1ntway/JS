@@ -34,23 +34,56 @@
 
 
 
-let n = Number(prompt('Введите число num'));
-let it_num = 0;
-while (n < 1000) {
-    n = n * 3;
-    console.log(n)
-    it_num++;
-    if (n > 1000) {
-        break;
-    }
+// let n = Number(prompt('Введите число num'));
+// let it_num = 0;
+// while (n < 1000) {
+//     n = n * 3;
+//     console.log(n)
+//     it_num++;
+//     if (n > 1000) {
+//         break;
+//     }
 
 
-}
-console.log('Цикл выполнен ' + it_num + ' раз');
+// }
+// console.log('Цикл выполнен ' + it_num + ' раз');
 
 
 
 
+
+
+
+
+
+// FOR
+// for (let n = 1; n <= 100; n++) {
+//     console.log(n)
+// }
+
+
+
+// for (let n = 11; n <= 33; n++) {
+//     console.log(n)
+// }
+
+
+
+// for (let n = 0; n < 100; n += 2) {
+//     console.log(n)
+// }
+
+
+
+// for (let n = 0; n < 100; n++) {
+//     n++;
+//     console.log(n)
+// }
+
+
+// for (let n = 100; n >= 0; n--) {
+//     console.log(n)
+// }
 
 
 
