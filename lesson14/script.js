@@ -10,8 +10,9 @@ let end_number = +prompt(`Цель игры - отгадать целое чис
  введите число, до которого можно загать секретное число и 
  приступй к игре
  `)
-let number = Math.ceil(Math.random() * end_number)
-while (true) {
+let number = Math.ceil(Math.random() * end_number);
+let answer;
+while (number != answer) {
     answer = +prompt(`Введите число от 1 до ${end_number}`)
     if (answer > number) {
         alert('Загаданное число меньше!');
@@ -36,5 +37,6 @@ while (true) {
             document.location.reload();
         }
     }
+    console.log(1);
 }
 
