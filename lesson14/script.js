@@ -37,6 +37,5 @@ while (number != answer) {
             document.location.reload();
         }
     }
-    console.log(1);
 }
 
