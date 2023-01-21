@@ -37,4 +37,51 @@
 // console.log(arr)
 
 
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 0, 'a', 'b');
+// arr.splice(6, 0, 'c');
+// arr.splice(8, 0, 'e');
+// console.log(arr);
+
+
+// let arr = [1, 2, 4, 5];
+// let finding = arr.indexOf(3);
+// console.log(finding)
+// if (finding == 2) {
+//     console.log('да')
+// }
+// else {
+//     console.log('нет')
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let words = ['стол', 'красивый', 'манго'];
+// let random_index = Math.floor(Math.random() * 3);
+// console.log('первое случайное число с индексом: ' + random_index + ' - ' + words[random_index]);
+// let random_index1 = Math.floor(Math.random() * 3);
+// console.log('второе случайное число с индексом: ' + random_index1 + ' - ' + words[random_index1]);
+// let random_index2 = Math.floor(Math.random() * 3);
+// console.log('Третье случайное слово с индексом: ' + random_index2 + ' - ' + words[random_index2]);
+// let result = words[random_index] + ' хочет ' + words[random_index1] + ' ' + words[random_index2] + '!';
+// console.log(result);
+
 
