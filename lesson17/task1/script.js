@@ -74,26 +74,26 @@
 
 
 
-// let equl = 0;
-// let people = {
-//     'Маша': 15,
-//     'Саша': 13,
-//     'Петя': 16,
-//     'Даша': 10
-// }
-// for (let i = 0; i < 4; i++) {
-//     equl = people['Маша'];
-//     if (equl < people['Саша']) {
-//         equl = people['Саша'];
-//     }
-//     else if (equl < people['Петя']) {
-//         equl = people['Петя'];
-//     }
-//     else if (equl < people['Даша']) {
-//         equl = people['Даша'];
-//     }
-//     else {
-//         console.log(Error);
-//     }
-// }
-// console.log('Самый старший: ' + equl + ' Лет')
+let max = 0;
+let people = {
+    'Маша': 15,
+    'Саша': 13,
+    'Петя': 16,
+    'Даша': 10
+}
+for (let i = 0; i < 4; i++) {
+    max = people['Маша'];
+    if (max < people['Саша']) {
+        max = people['Саша'];
+    }
+    else if (max < people['Петя']) {
+        max = people['Петя'];
+    }
+    else if (max < people['Даша']) {
+        max = people['Даша'];
+    }
+    else {
+        console.log(Error);
+    }
+}
+console.log('Самый старший: ' + max + ' Лет')
