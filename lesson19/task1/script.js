@@ -36,8 +36,6 @@ let hero = [
     }
 
 ]
-let armorCount = 0;
-
 let user = +prompt(`Выберите действие:
 1. Вывести героев у кого 900 и больше HP
 2. Вывести героев у кого чья силы меньше 7
@@ -64,32 +62,44 @@ switch (user) {
         }
         break;
     case 3:
+        let armorCount = 0;
         for (let i = 0; i < hero.length; i++) {
             armorCount += hero[i].armor
-
         }
         armorCount = armorCount / hero.length;
         console.log(armorCount)
         alert('средний показатель брони: ' + armorCount);
         break;
     case 4:
-        user1 = prompt(`Какой 1 герой будет сражатся?(Введите полное название)
+        user1 = +prompt(`Какой 1 герой будет сражатся?
         1. Phantom Assasin
         2. Sky Wrath Mage
         3. EarthShaker
         4. Invoker
         5. Slardar`)
-        user2 = +prompt(`Какой 2 герой будет сражатся?(Введите полное название)
+        user2 = +prompt(`Какой 2 герой будет сражатся?
         1. Phantom Assasin
         2. Sky Wrath Mage
         3. Earth Shaker
         4. Invoker
         5. Slardar`)
-        let random = Math.floor(Math.random())
+        let nameMapper = {
+            1: 'Phantom Assasin',
+            2: 'Sky Wrath Mage',
+            3: 'Earth Shaker',
+            4: 'Invoker',
+            5: 'Slardar'
+        }
+        console.log(user1)
+        console.log(user2)
+
+
+        let random = Math.floor(Math.random() * 2);
+
         if (random === 1) {
-            alert(user2 + ' wins!')
+            alert(nameMapper[user2] + ' wins!');
         }
         else if (random === 0) {
-            alert(user1 + ' wins!')
+            alert(nameMapper[user1] + ' wins!')
         }
 }
