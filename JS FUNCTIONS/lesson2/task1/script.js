@@ -216,20 +216,106 @@
 
 
 // task 9
-function check(num1) {
-    if (num1.toString().length == 2) {
-        for (let i = 0; i <= num1; i++) {
-            if (num1 % i === 0) {
-                console.log(i)
-            }
+// function check(num1) {
+//     if (num1.toString().length == 2) {
+//         for (let i = 0; i <= num1; i++) {
+//             if (num1 % i === 0) {
+//                 console.log(i)
+//             }
+//         }
+//     }
+//     else {
+//         console.log('ERROR! Check ur number!')
+//     }
+// }
+
+// check(24)
+
+
+
+
+
+// New presentation medium level
+// task1
+// array = [1, 2, 3, 4]
+// function average(array) {
+//     let result = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         let num = array[i];
+//         result += num;
+//     }
+
+//     return result / array.length;
+// }
+// console.log(average([1, -2, 4, 6, -10]));
+// console.log(average([-3, 5, 10]));
+
+
+
+// task2
+// array = [1,4,3,2]
+// return array.sort().reverse();
+// function sort(array) {
+// for(let i = 0; i)
+// }
+// console.log(sort([1, 4, 3, 2]))
+
+
+// task3
+// function sections(num1) {
+//     let numStr = num1.toString();
+//     let i = 0;
+//     return numStr.length;
+// }
+// console.log(sections(123));
+
+
+
+
+// TASK2
+// array = [6, 3, 5, 1]
+// function sort(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let b = i + 1; b < array.length; b++) {
+//             if (array[i] < array[b]) {
+//                 let c = array[i];
+//                 array[i] = array[b];
+//                 array[b] = c;
+//             }
+//         }
+//     }
+//     return array
+// }
+// console.log(sort([6, 3, 5, 1]));
+
+
+
+
+// task4
+// function reverse(string) {
+//     let splited = string.split(' ').reverse().join(" ");
+//     console.log(splited);
+// }
+
+// console.log(reverse('я учусь в Айтигенио'))
+
+
+// task5
+function mult(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            document.write('<ins>' + array[i] + '</ins>')
+        }
+        else {
+            document.write(array[i])
         }
     }
-    else {
-        console.log('ERROR! Check ur number!')
-    }
 }
+mult([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-check(24)
+
+
+
 
 
 
