@@ -80,4 +80,15 @@
 // let result = arr.filter(function (elem, i) {
 //     return elem * i > 30
 // })
+// console.log(result)'
+
+// let arr = [1, 2, [3, 4], 5, [6, 7]];
+// let result = arr.filter(function (elem) {
+//     if (Array.isArray(elem)) {
+//         return false;
+//     }
+//     return true;
+// })
 // console.log(result)
+
+
