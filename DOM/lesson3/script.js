@@ -133,18 +133,24 @@
 
 
 
+// let liFirstChild = document.querySelector('ul > li:first-child')
+// let innerText = liFirstChild.innerText;
+// console.log(innerText.length);
 
 
 
 
 
+// ==========================================
+// 9
 
 
 
-
-let counter = document.querySelectorAll('ul > li:first-child')
-for (let elem in counter) {
-
-}
-
+// let tag = document.querySelector('#elem');
+// let children = tag.children;
+// console.log(children);
+// for (let i = 0; i < children.length; i++) {
+//     let el = children[i];
+//     console.log(el.innerText);
+// }
 
