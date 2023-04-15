@@ -116,10 +116,10 @@
 
 
 
-let text = document.querySelector('#text');
-let button = document.querySelector('#button1');
+// let text = document.querySelector('#text');
+// let button = document.querySelector('#button1');
 
-button.addEventListener('click', function () {
-    text.innerHTML = '<b>' + text.innerHTML + '</b>'
-})
-console.log()
+// button.addEventListener('click', function () {
+//     text.innerHTML = '<b>' + text.innerHTML + '</b>'
+// })
+// console.log()
