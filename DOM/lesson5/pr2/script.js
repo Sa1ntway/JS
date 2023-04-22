@@ -98,8 +98,25 @@
 
 
 // 8
-let input = document.getElementById('input2');
-input.addEventListener('blur', function () {
-    input.value = input.value ** 2;
-})
-input.style.background = 'black';
+// let input = document.getElementById('input2');
+// input.addEventListener('blur', function () {
+//     input.value = input.value ** 2;
+// })
+// input.style.background = 'black';
+
+
+
+
+
+// 9
+
+// let input = document.getElementById('input2');
+// input.addEventListener('focus', function () {
+//     input.value = ''
+// })
+// input.addEventListener('blur', function () {
+//     input.value = 'Hello'
+// })
+
+// input.style.background = 'black';
+// input.style.color = 'white';
