@@ -142,6 +142,26 @@
 
 
 
+let p = document.querySelector('p');
+let btn = document.getElementById('btn');
+let elems = document.querySelectorAll('#elem');
+let counter = 0
+btn.addEventListener('click', function () {
+    for (let elem of elems) {
+        counter += Number(elem.value);
+        p.textContent = counter;
+    }
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
