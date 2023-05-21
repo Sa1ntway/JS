@@ -1,0 +1,16 @@
+button {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none
+}
+
+.active {
+    display: block;
+    margin: 0 auto;
+}
+
+#timer {
+    font-size: 18px;
+    text-align: center;
+}
