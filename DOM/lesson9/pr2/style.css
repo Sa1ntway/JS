@@ -14,3 +14,14 @@ button {
     font-size: 18px;
     text-align: center;
 }
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
