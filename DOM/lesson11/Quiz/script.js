@@ -1,8 +1,52 @@
+function builQuiz() {
+
+    const output = [];
+
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+        const answers = [];
+
+        for (letter in currentQuestion.answers) {
+            answers.push(
+                `<label>
+                <input type='radio' name='question${questionNumber}' value="${letter}'>
+                ${letter} :
+                ${currentQuestion.answers[letter]}
+                </label>`
+            );
+        }
+
+        output.push(
+            `<div class='question'> ${currentQuestion.question} </div>
+                <div class="answers"> ${answers.join('')} </div>`
+        );
+    });
+    quizContainer.innerHTML = output.join('');
+};
+
+
+function showResults() {
+    const answerContainer = quizContainer.querySelector('.answers');
+    let numCorrect = 0;
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+        const answerContainer = answerContainer[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+        if (userAnswer === currentQuestion.correctAnswer) {
+            numCorrect++;
+            answerContainer[questionNumber].style.color = 'lightgreen';
+        }
+        else {
+            answerContainer[questionNumber].style.color = 'red';
+        }
+    });
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
+}
+
+
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
-function builQuiz();
-submitButton.addEventListener('click', showResults);
 const myQuestions = [
     {
         question: "Какая компания сделала игру DotA 2?",
@@ -31,22 +75,12 @@ const myQuestions = [
         },
         correctAnswer: 'b'
     },
-]
+];
 
-myQuestions.forEach((currentQuestion, questionNumber) => {
-    const answers = [];
-    for (letter in currentQuestion.answers) {
-        answers.push(
-            `<label>
-            <input type='radio' name='question${questionNumber}' value = "${letter}'
-            ${letter} :
-            ${currentQuestion.asnwer[letter]}
-            </label>`
-        );
-    }
+builQuiz();
+
+submitButton.addEventListener('click', showResults);
 
 
-    output.push(
-        `<div class='question'>`
-    )
-});
+
+
