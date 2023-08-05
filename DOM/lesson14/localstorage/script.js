@@ -101,16 +101,30 @@
 
 
 
-window.onload = function () {
-    let name = prompt('Введите свое имя', localStorage.getItem());
-    let age = prompt('Введите свой возраст',);
-    let arr = {
-        name: 'Vlad',
-        age: '14'
-    };
+// window.onload = function () {
+//     let objectJSON = localStorage.getItem('User1');
+//     let object = JSON.parse(objectJSON) || {};
 
-    localStorage.setItem('User1', JSON.stringify(arr));
-}
+//     let name = prompt('Введите свое имя', object.name)
+//     let age = prompt('Введите свой возраст', object.age);
+//     let arr = {
+//         name: name,
+//         age: age
+//     };
+
+//     localStorage.setItem('User1', JSON.stringify(arr));
+// }
+
+
+
+
+
+
+let toDoList = `{
+    "Изучить тему localStorage в JS": "Выполнено",
+    "Выполнить задание по теме localStorage": "Не выполнено"
+}`;
+
 
 
 

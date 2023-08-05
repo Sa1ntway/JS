@@ -16,7 +16,16 @@ let todo_data = [
         completed: false,
     },
 ]
+
+if (localStorage.todo_saved == true) {
+    todo_data = JSON.parse(localStorage.todo_saved);
+}
+else {
+    todo_data = []
+}
+
 function addToDo() {
+
     todo_list.textContent = '';
     todo_completed.textContent = '';
     todo_data.forEach(function (item, i) {
@@ -61,7 +70,9 @@ function addToDo() {
 
 
     });
-    localStorage.todo_saved = todo_data;
+    localStorage.todo_saved = todo_data
+
+
 
 
 
@@ -82,8 +93,10 @@ header_button.addEventListener('click', function (event) {
 
     }
 
-    console.log('dadh')
 })
+
+
+
 
 
 addToDo()
