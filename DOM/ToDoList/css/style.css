@@ -125,9 +125,9 @@ ul {
 }
 
 .todo-remove {
-     background-image: url("../img/trash.png");
-     background-size: contain;
- }
+    background-image: url("../img/trash.png");
+    background-size: contain;
+}
 
 .todo-complete {
     background-image: url("../img/uncheck.png");
