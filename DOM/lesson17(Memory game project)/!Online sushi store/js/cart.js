@@ -1,28 +1,5 @@
 const cartWrapper = document.querySelector(".cart-wrapper");
 window.addEventListener("click", function (event) {
-  function toggleCartStatus() {
-    const cartEmpty = document.querySelector("[data-cart-empty]");
-    const cartTotal = document.querySelector(".cart-total");
-    const orderForm = document.querySelector("#order-form");
-    if (cartWrapper.querySelectorAll(".cart-item").length > 0) {
-      cartEmpty.classList.add("none");
-      cartTotal.classList.remove("none");
-      orderForm.classList.remove("none");
-    } else {
-      cartEmpty.classList.remove("none");
-      cartTotal.classList.add("none");
-      orderForm.classList.add("none");
-    }
-    let totalPrice = 0;
-    cartWrapper.querySelectorAll(".cart-item").forEach(function (item) {
-      const counter = item.querySelector("[data-counter]").innerText;
-      const priceOneItem = item.querySelector(".price__currency").innerText;
-      const price = parseInt(counter) * parseInt(priceOneItem);
-      totalPrice = totalPrice + price;
-      cartTotal.querySelector(".total-price").innerText = totalPrice;
-    });
-  }
-
   if (event.target.hasAttribute("data-cart")) {
     const cart = event.target.closest(".card");
 
@@ -75,3 +52,34 @@ window.addEventListener("click", function (event) {
     toggleCartStatus();
   }
 });
+
+function toggleCartStatus() {
+  const cartEmpty = document.querySelector("[data-cart-empty]");
+  const cartTotal = document.querySelector(".cart-total");
+  const orderForm = document.querySelector("#order-form");
+  if (cartWrapper.querySelectorAll(".cart-item").length > 0) {
+    cartEmpty.classList.add("none");
+    cartTotal.classList.remove("none");
+    orderForm.classList.remove("none");
+  } else {
+    cartEmpty.classList.remove("none");
+    cartTotal.classList.add("none");
+    orderForm.classList.add("none");
+  }
+  let totalPrice = 0;
+  let deliveryCost = document.querySelector(".delivery-cost");
+  cartWrapper.querySelectorAll(".cart-item").forEach(function (item) {
+    const counter = item.querySelector("[data-counter]").innerText;
+    const priceOneItem = item.querySelector(".price__currency").innerText;
+    const price = parseInt(counter) * parseInt(priceOneItem);
+    totalPrice = totalPrice + price;
+    cartTotal.querySelector(".total-price").innerText = totalPrice;
+  });
+  if (totalPrice <= 999) {
+    deliveryCost.classList.remove("free");
+    deliveryCost.innerText = "300р";
+  } else {
+    deliveryCost.classList.add("free");
+    deliveryCost.innerText = "бесплатно";
+  }
+}
