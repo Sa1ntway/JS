@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <div class="canvasContainer">
+      <canvas id="drawingCanvas" width="500" height="340"></canvas>
+    </div>
+    <div>
+      <button onclick="addBall()">Добавить Мячик</button>
+      <button onclick="clearBalls()">Очистить холст</button>
+    </div>
+    <div>
+      Размер мячика:
+      <input id="ballSize" type="number" min="0" max="50" value="15" />
+      <input id="connectedBalls" type="checkbox" />Добавить соединяющие линии<br />
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

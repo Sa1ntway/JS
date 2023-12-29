@@ -114,22 +114,51 @@
 
 // ----------------------------------------
 
-class Hero {
-  constructor(name, level) {
-    this.name = name;
-    this.level = level;
+// class Hero {
+//   constructor(name, level) {
+//     this.name = name;
+//     this.level = level;
+//   }
+//   win() {
+//     console.log(`${this.name} WINNER!`);
+//   }
+//   def() {
+//     console.log(`${this.name} DEAFEATED!`);
+//   }
+// }
+
+// let Hero1 = new Hero("Ursa", 23);
+// Hero1.win();
+// let Hero2 = new Hero("Crystal Maiden", 18);
+// Hero2.def();
+
+// ----------------------------------------
+
+class calc {
+  constructor(number1, number2) {
+    this.number1 = number1;
+    this.number2 = number2;
   }
-  win() {
-    console.log(`${this.name} WINNER!`);
+  addition() {
+    let result = this.number1 + this.number2;
+    console.log(result);
   }
-  def() {
-    console.log(`${this.name} DEAFEATED!`);
+  subtraction() {
+    let result1 = this.number1 - this.number2;
+    console.log(result1);
+  }
+  multiplication() {
+    let result2 = this.number1 * this.number2;
+    console.log(result2);
+  }
+  division() {
+    let result3 = this.number1 / this.number2;
+    console.log(result3);
   }
 }
 
-let Hero1 = new Hero("Ursa", 23);
-Hero1.win();
-let Hero2 = new Hero("Crystal Maiden", 18);
-Hero2.def();
-
-// ----------------------------------------
+let number1 = new calc(8, 9);
+number1.multiplication();
+number1.addition();
+number1.division();
+number1.subtraction();
