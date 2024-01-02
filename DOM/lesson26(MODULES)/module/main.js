@@ -4,5 +4,5 @@ import { createRect } from "./flat.js";
 
 let myCanvas = create("myCanvas", document.body, 480, 320);
 
-drawline(myCanvas.ctx, 50, 50, 100, 100, "red");
-createRect(rect(50, 50, 50, 50));
+// drawline(myCanvas.ctx, 50, 50, 100, 100, "red");
+createRect(myCanvas.ctx, 50, 50, 50, 50);

@@ -1,10 +1,12 @@
-export function createRect(width, height, x, y) {
+export function createRect(ctx, width, height, x, y) {
   ctx.beginPath();
-  ctx.rect(width, height, x, y);
-  ctx.strokeRect();
+  ctx.strokeRect(width, height, x, y);
 
   return {
     ctx: ctx,
-    rect: rect,
+    width: width,
+    height: height,
+    x: x,
+    y: y,
   };
 }

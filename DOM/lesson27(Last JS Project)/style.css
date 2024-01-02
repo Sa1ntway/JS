@@ -1,0 +1,26 @@
+/* #name {
+  color: red;
+}
+
+#birthYear {
+  font-style: italic;
+}
+
+#phoneNumber {
+  font-weight: bold;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#backgroundImage {
+  background-image: url(img/dc97d71f-6759-4e00-a123-29644b33bf4d.jpg);
+  height: 100vh;
+}
+
+#imageScaling {
+  width: 300;
+  height: 300;
+}
